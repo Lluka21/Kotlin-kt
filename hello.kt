@@ -1,9 +1,10 @@
 fun main() {
-val n1: Int = 128
-val n2: Int = 128
+ val a: UInt = 300u
+ val b: UByte = 255u
+ val c: ULong = 5000000000uL
 
-println(n1 == n2) 
-println(n1 === n2) 
-
+    println(a)
+    println(b)
+    println(c)
 }
 
