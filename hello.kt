@@ -1,5 +1,5 @@
 fun main() {
-    val nullArray: Array<Int?> =  arrayOfNulls(3)
-    println(nullArray.joinToString())
+    val myArray = Array<Int>(5) { i -> i * i };
+    println(myArray.joinToString())
 }   
 
