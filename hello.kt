@@ -1,6 +1,4 @@
 fun main() {
-    val str = "abcd"
-    println(str.uppercase())
-
+  val letters = listOf("a","b","c","d","e")
 }   
 
