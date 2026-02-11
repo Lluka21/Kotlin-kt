@@ -1,4 +1,5 @@
 fun main() {
-  val letters = listOf("a","b","c","d","e")
+    val nullArray: Array<Int?> =  arrayOfNulls(3)
+    println(nullArray.joinToString())
 }   
 
