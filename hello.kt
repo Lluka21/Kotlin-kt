@@ -1,3 +1,8 @@
 fun main() {
-    println("Hello luka")
-}
+
+   val sumArray = arrayOf(1,2,3)
+   println(sumArray.sum())
+
+
+}   
+
