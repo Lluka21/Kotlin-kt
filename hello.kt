@@ -1,8 +1,12 @@
 fun main() {
+   val fruits = listOf("Apple","Banana","Cherry")
 
-   val sumArray = arrayOf(1,2,3)
-   println(sumArray.sum())
+   for((index,fruit) in fruits.withIndex()) {
+      println("$index: $fruit")
+   }
+   
+}
 
 
-}   
+
 
