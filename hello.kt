@@ -1,13 +1,14 @@
-fun read(b: Int, print:(Int) -> Unit = {println("No argument passed for 'print'")}) {
-   print(b)
-
+fun printHello(name:String?, action:() -> Unit) {
+   if(name !== null) {
+      println("Hello $name")
+   } else {
+      println("Hi there")
+   }
+   action()
 }
 
-fun main(){ 
-   read(1)
-   read(2) { value -> 
-         println("Value is $value")
-   }
 
+fun main(){ 
+   printHello("Kodee"){}
 }
 
