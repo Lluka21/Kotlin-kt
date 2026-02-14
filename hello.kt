@@ -1,12 +1,13 @@
-fun main() {
-   val fruits = listOf("Apple","Banana","Cherry")
+fun read(b: Int, print:(Int) -> Unit = {println("No argument passed for 'print'")}) {
+   print(b)
 
-   for((index,fruit) in fruits.withIndex()) {
-      println("$index: $fruit")
-   }
-   
 }
 
+fun main(){ 
+   read(1)
+   read(2) { value -> 
+         println("Value is $value")
+   }
 
-
+}
 
