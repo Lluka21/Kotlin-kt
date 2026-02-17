@@ -1,8 +1,7 @@
 
 fun <T> asList(vararg ts: T): List<T>{
    val result = ArrayList<T>()
-   for(t in ts)
-    
+   for(t in t   
 
 fun main() {
    val fruits = listOf("Apple","Banana","Cherry")
