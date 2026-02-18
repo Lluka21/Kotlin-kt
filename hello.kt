@@ -1,6 +1,6 @@
 
 fun <T> asList(vararg ts: T): List<T>{
-   val result = ArrayList<T>
+   val result = ArrayList<T
    
 
 fun main() {
