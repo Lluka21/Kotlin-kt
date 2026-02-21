@@ -1,11 +1,10 @@
 fun main() {
+   var number = 0
 
-   for(i in 1 until 10) {
-      println(i)
+   while(number < 10) {
+      number++
+
+      println(number)
    }
-
 }
-
-  
-
 
