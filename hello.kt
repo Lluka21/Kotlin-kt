@@ -12,7 +12,7 @@ fun main() {
       }
 
       println(number)
-===
+==
 
 fun <T> asList(vararg ts: T): List<T>{
    val result = ArrayList
