@@ -5,7 +5,7 @@ fun main() {
    var evenNumberCounter = 0
 
    while(number <= lastNumber) {
-      number
+      number++
 
       if(isEvenNumber(number)) {
          continue
