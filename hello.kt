@@ -15,7 +15,7 @@ fun main() {
 
 
 fun <T> asList(vararg ts: T): List<T>{
-   val result = ArrayList
+   val result = ArrayLis
    
 
 fun main() {
