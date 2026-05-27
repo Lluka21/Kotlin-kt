@@ -22,7 +22,6 @@ fun main() {
 
    for((index,fruit) in fruits.withIndex()) {
       println("$index: $ruit")
-
    }
 
 }
