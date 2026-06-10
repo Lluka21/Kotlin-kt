@@ -23,7 +23,6 @@ fun main() {
       println("$index: $ruit")
    }
 }
-
 fun isEvenNumber(number: Int): Boolean {
    if((number % 2 ) == 0) {
       return true
