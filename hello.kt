@@ -10,7 +10,6 @@ fun main() {
       if(isEvenNumber(number)) {
          continue
       }
-
       println(number)
 
 fun <T> asList(vararg ts: T): List<T>{
