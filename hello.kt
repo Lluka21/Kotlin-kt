@@ -1,6 +1,7 @@
 
 fun main() {
 
-val factorial = 5
+val n = 5;
+var factorial - 1   
    
 }
