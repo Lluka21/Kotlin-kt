@@ -1,4 +1,3 @@
-
 fun main() {
 
 val n = 5;
