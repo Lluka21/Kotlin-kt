@@ -8,5 +8,4 @@ var factorial - 1;
 
       return factorial
    }
-   
 }
