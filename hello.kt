@@ -8,8 +8,6 @@ fun main() {
     } else {
         println("$given_number is not divisible by 7")
     }
-
-
 }
 
 fun numberChecker(given_number: Int): String {
@@ -19,5 +17,6 @@ fun numberChecker(given_number: Int): String {
         println("Negative Number")
     } else if(given_number == 0) {
         println("Zero ")
-    }
-    return given_number.toString()}
+    }  
+    return given_number.toString()
+}
