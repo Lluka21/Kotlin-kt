@@ -23,6 +23,17 @@ fun main() {
     } else if(given_character in consonants) {
         println("this '$given_character' is consonant")
     }
+
+    fun main() {
+
+    for(i in 1..10 ) {
+        println(i)
+    }
+
+}
+
+    
+    
 }
 
 fun numberChecker(given_number: Int): String {
