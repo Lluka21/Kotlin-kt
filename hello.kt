@@ -8,6 +8,21 @@ fun main() {
     } else {
         println("$given_number is not divisible by 7")
     }
+
+     val vowels: CharArray = charArrayOf('a', 'e', 'i', 'o', 'u')
+    val consonants: CharArray = charArrayOf(
+        'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm',
+        'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'
+    )
+
+
+    val given_character: Char = 'a'
+
+    if(given_character in vowels) {
+        println("this '$given_character' is vowel")
+    } else if(given_character in consonants) {
+        println("this '$given_character' is consonant")
+    }
 }
 
 fun numberChecker(given_number: Int): String {
