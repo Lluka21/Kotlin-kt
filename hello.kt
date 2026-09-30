@@ -23,9 +23,6 @@ fun main() {
     } else if(given_character in consonants) {
         println("this '$given_character' is consonant")
     }
-
-   
-
     
     
 }
