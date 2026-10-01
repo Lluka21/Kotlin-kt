@@ -23,6 +23,12 @@ fun main() {
     } else if(given_character in consonants) {
         println("this '$given_character' is consonant")
     }
+
+     val numberOfRows: Int = 3
+
+
+    printPascalTriangle(numberOfRows)
+
     
     
 }
@@ -37,3 +43,5 @@ fun numberChecker(given_number: Int): String {
     }  
     return given_number.toString()
 }
+
+
