@@ -45,3 +45,19 @@ fun numberChecker(given_number: Int): String {
 }
 
 
+fun printPascalTriangle(numberOfRows: Int): Unit {
+
+
+    for (i in 1..numberOfRows) {
+        val array = mutableListOf<Int>()
+        array.add(1)
+        println(array)
+            for(j in 0 until i) {
+                println(array[j])
+            }
+
+    }
+
+
+}
+
