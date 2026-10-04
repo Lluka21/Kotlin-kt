@@ -24,10 +24,8 @@ fun main() {
         println("this '$given_character' is consonant")
     }
 
-     val numberOfRows: Int = 3
-
-
-    printPascalTriangle(numberOfRows)
+     val numberOfRows = 2
+     printPascalTriangle(numberOfRows)
 
     
     
