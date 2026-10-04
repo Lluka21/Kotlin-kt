@@ -45,17 +45,23 @@ fun numberChecker(given_number: Int): String {
 }
 
 
-fun printPascalTriangle(numberOfRows: Int): Unit {
 
+/// Pascal Triangle Logic
+fun printPascalTriangle(numberOfRows: Int) {
 
+    val previousRow = mutableListOf<Int>()
     for (i in 1..numberOfRows) {
-        val array = mutableListOf<Int>()
-        array.add(1)
-        println(array)
-            for(j in 0 until i) {
-                println(array[j])
-            }
-
+        val currentRow = mutableListOf<Int>()
+        currentRow.add(1)
+        for (j in 1 until previousRow.size) {
+            currentRow.add(previousRow[j - 1] + previousRow[j])
+        }
+        if (i > 1) {
+            currentRow.add(1)
+        }
+        previousRow.clear();
+        previousRow.addAll(currentRow)
+        println(previousRow)
     }
 
 
