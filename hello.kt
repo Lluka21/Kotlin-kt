@@ -1,5 +1,8 @@
 fun main() {
-greeting("Luka")
+
+    // greeting("Luka")
+    // evenNumbers(intArrayOf(1, 2, 3, 4, 5))
+
 }
 
 fun greeting(name: String): String {
