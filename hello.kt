@@ -10,7 +10,7 @@ fun greeting(name: String): String {
     return ""
 }
 
-// IntArra
+// IntArr
 fun evenNumbers(
     arrayOfIntegers:IntArray = intArrayOf(),
 ){
