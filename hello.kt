@@ -7,7 +7,7 @@ fun main() {
 }
 
 fun generatePermutation(str: String)  {
-//    Hint 1: Use recur
+
     val charArray = str.toCharArray()
     var temporary = charArray[0] // A
     charArray[0] = charArray[1] // B
