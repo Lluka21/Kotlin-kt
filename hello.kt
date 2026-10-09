@@ -12,7 +12,7 @@ fun generatePermutation(str: String)  {
     var temporary = charArray[0] // A
     charArray[0] = charArray[1] // B
     charArray[1] = temporary // A
-//    var secondTemporary = charArray[1]
+
 //    temporary = secondTemporary
 //    val swapResult = charArray.swap()
 //    Hint 2: Stop recursion when the current index reaches the end of the string.
