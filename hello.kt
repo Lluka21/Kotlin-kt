@@ -18,7 +18,7 @@ fun generatePermutation(str: String)  {
 //    Hint 2: Stop recursion when the current index reaches the end of the string.
 //    Hint 3: Swap each character with the current index to explore all possibilities.
 //    Hint 4: Use backtracking to revert swaps after each recursive call.
-//    Hint 5: Store and return all generated permutations in a list
+//    Hint 5: Store and return all generated permutations in a lis
 
 
 }
