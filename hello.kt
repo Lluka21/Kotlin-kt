@@ -1,24 +1,29 @@
-package org.example
 
 import kotlin.math.absoluteValue
 
 fun main() {
-    val str:String = "ABC"
+    val str: String = "ABC"
+    generatePermutation(str)
 }
 
-fun generatePermutation(str: String)  {
+fun generatePermutation(str: String) {
+    // ჩემი აზრით base case ->
+    // The recursion stops when the index reaches the last character of the string.
+
+    var index:Int = 0
+    if(index == str.length-1) {
+        return
+    }
 
     val charArray = str.toCharArray()
-    var temporary = charArray[0] // A
-    charArray[0] = charArray[1] // B
-    charArray[1] = temporary // A
+    var firstChar = charArray[0] // A
 
-//    temporary = secondTemporary
-//    val swapResult = charArray.swap()
-//    Hint 2: Stop recursion when the current index reaches the end of the string.
-//    Hint 3: Swap each character with the current index to explore all possibilities.
-//    Hint 4: Use backtracking to revert swaps after each recursive call.
-//    Hint 5: Store and return all generated permutations in a list.
+    charArray[0] = charArray[1] // B
+    charArray[1] = firstChar // A
+
+
+    println(charArray)
 
 
 }
+
