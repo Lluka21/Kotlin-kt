@@ -37,3 +37,19 @@ class UserManager() {
 
 // <-------------------->
 
+
+interface Shape {
+    fun area(): Double
+}
+
+class Rectangle(val width: Double, val height: Double) : Shape {
+    override fun area() = width * height
+}
+
+class Circle(val width: Double, val height: Double): Shape {
+    override fun area(): Double {
+        return width * height
+    }
+}
+
+fun calculateArea(shape:Shape) = shape.area()
