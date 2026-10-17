@@ -86,3 +86,33 @@ class Eagle: Bird(), Flyable {
         return true
     }
 }
+
+// <-------------------->
+
+// We can divide the interfaces, so we  avoid throwing Exception on specific cases 
+// when some of the subclasses don't have the certain habit in parent class
+interface Animal {
+    fun swim()
+    fun fly()
+}
+
+class Duck : Animal {
+    override fun swim() {
+        println("Duck swimming")
+    }
+
+    override fun fly() {
+        println("Duck flying")
+    }
+}
+
+class Penguin : Animal {
+    override fun swim() {
+        println("Penguin swimming")
+    }
+
+    override fun fly() {
+        throw UnsupportedOperationException("Penguin cannot fly")
+    }
+}
+
