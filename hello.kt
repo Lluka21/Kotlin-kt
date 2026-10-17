@@ -53,3 +53,36 @@ class Circle(val width: Double, val height: Double): Shape {
 }
 
 fun calculateArea(shape:Shape) = shape.area()
+
+
+// Liskov Substitution Principle
+
+//class Penguin: Bird() {
+//    override fun cantFly() {
+//        print("Penguins can't fly ")
+//    }
+//}
+// Ends here
+
+// How does Liskov Substitution comes here
+
+open class Bird {
+    // common bird methods and properties
+}
+
+
+// add here the abilities of flying birds
+interface Flyable {
+    fun fly(): Boolean
+}
+
+// When we face the non-flying bird, we can diversify the logic
+class Penguin : Bird() {
+    //methods and properties specific to penguins
+}
+
+class Eagle: Bird(), Flyable {
+    override fun fly(): Boolean{
+        return true
+    }
+}
