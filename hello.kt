@@ -4,7 +4,9 @@ package org.example
 import kotlin.math.absoluteValue
 
 fun main() {
-
+    val paymentService = PaymentService()
+    println(paymentService.processPaymentWithPaypal(50.0)) // Process payment via Paypal API
+    println(paymentService.processPaymentWithStripe(50.0)) // Process payment via Stripe API
 }
 
 class User {}
@@ -116,3 +118,29 @@ class Penguin : Animal {
     }
 }
 
+class PaymentService {
+    private val paymentProcessorPaypal = PaypalPaymentProcessor()
+    private val paymentProcessorStripe = StripePaymentProcessor()
+
+    fun processPaymentWithPaypal(amount: Double): Boolean {
+        return paymentProcessorPaypal.processPayment(amount)
+    }
+
+    fun processPaymentWithStripe(amount: Double): Boolean {
+        return paymentProcessorStripe.processPayment(amount)
+    }
+}
+
+class PaypalPaymentProcessor {
+    fun processPayment(amount: Double): Boolean {
+        // Process payment via PayPal API
+        return true
+    }
+}
+
+class StripePaymentProcessor {
+    fun processPayment(amount: Double): Boolean {
+        // Process payment via Stripe API
+        return true
+    }
+}
