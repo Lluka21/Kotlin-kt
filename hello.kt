@@ -20,7 +20,7 @@ class SystemManager {
     fun sendEmail(user: User, email: String) {}
 }
 
-// <-------------->
+// <------------->
 
 // Correct Approach is like this
 
