@@ -11,7 +11,7 @@ fun main() {
 
 class User {}
 
-// Class User is doing multiple responsibility here
+// Class User is doing multiple responsibility her
 
 class SystemManager {
     fun addUser(user: User) { }
