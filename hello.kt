@@ -99,3 +99,38 @@ class UserManager(
     }
 }
 // 
+
+
+// Open/Close Responsibility Principle
+
+interface PaymentMethod {
+    fun pay(amount: Double)
+}
+
+class CardPayment: PaymentMethod {
+    override fun pay(amount:Double) {
+        println("Paying  $amount by card")
+    }
+}
+
+class CryptoPayment: PaymentMethod {
+    override fun pay(amount:Double) {
+        println("Paying  $amount by crypto")
+    }
+}
+
+class CashPayment: PaymentMethod {
+    override fun pay(amount:Double) {
+        println("Paying  $amount by cash")
+    }
+}
+
+class PaymentProcessor {
+    fun processPayment(
+        paymentMethod: PaymentMethod,
+        amount: Double
+    ) {
+        paymentMethod.pay(amount)
+    }
+}
+//
