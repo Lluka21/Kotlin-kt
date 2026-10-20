@@ -6,10 +6,7 @@ fun main() {
 
 }
 
-
-//}
-
-
+// DIP principle solution
 interface MessageService {
     fun send(message: String)
 }
@@ -33,3 +30,38 @@ class NotificationManager(
         messageService.send(message)
     }
 }
+//
+
+
+
+// Interface Segregation Principle Solution
+interface Workable {
+    fun work()
+
+}
+
+interface Eatable {
+    fun eat()
+}
+
+interface Sleepable {
+    fun sleep()
+}
+
+class HumanWorker : Workable,Eatable,Sleepable {
+    override fun work() {
+        println("Human is working")
+    }
+    override fun eat() {
+        println("Human is eating")
+    }
+    override fun sleep() {
+        println("Human is sleeping")
+    }
+}
+
+class RobotWorker : Workable {
+    override fun work() {
+    }
+}
+//
