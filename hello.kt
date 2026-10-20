@@ -134,3 +134,44 @@ class PaymentProcessor {
     }
 }
 //
+
+// Single Responsibility Prinicple
+
+class OrderCreation {
+    fun createOrder(product: String) {
+        println("Creating order for $product")
+    }
+}
+
+class InvoicePrinter {
+    fun printInvoice(product: String) {
+        println("Printing invoice for $product")
+    }
+}
+
+class ConfirmationEmailSender {
+    fun sendConfirmationEmail(product: String) {
+        println("Sending confirmation email for $product")
+    }
+}
+
+class ShippingCalculator {
+    fun calculateShipping(product: String) {
+        println("Calculating shipping for $product")
+    }
+}
+
+class OrderService {
+    private val order = OrderCreation()
+    private val invoice = InvoicePrinter()
+    private val email = ConfirmationEmailSender()
+    private val shipmentCalc = ShippingCalculator()
+
+    fun processOrder(product: String) {
+        order.createOrder(product)
+        invoice.printInvoice(product)
+        email.sendConfirmationEmail(product)
+        shipmentCalc.calculateShipping(product)
+    }
+}
+//
