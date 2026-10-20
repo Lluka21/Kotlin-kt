@@ -175,3 +175,37 @@ class OrderService {
     }
 }
 //
+
+class ReportGenerator {
+
+    fun generateReport(data: List<String>) {
+        println("Generating report...")
+        data.forEach {
+            println(it)
+        }
+        println("Report generated")
+    }
+}
+
+class  ReportSaver {
+    fun saveReportToFile(data: List<String>, fileName: String) {
+        println("Saving report to $fileName")
+
+        data.forEach {
+            println(it)
+        }
+    }
+}
+
+
+class ReportEmailSender {
+    fun emailReport(data: List<String>, email: String) {
+        println("Sending report to $email")
+
+        data.forEach {
+            println(it)
+        }
+    }
+}
+
+//
