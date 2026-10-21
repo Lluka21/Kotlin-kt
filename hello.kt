@@ -3,7 +3,7 @@ package org.example
 import kotlin.math.absoluteValue
 
 fun main() {
-
+//
 }
 
 // DIP principle solution
