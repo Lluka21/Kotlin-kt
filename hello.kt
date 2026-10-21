@@ -174,6 +174,44 @@ class OrderService {
         shipmentCalc.calculateShipping(product)
     }
 }
+
+//
+
+// Still Interface Segregation method 
+
+interface OpenDocument {
+    fun open()
+}
+
+interface EditDocument {
+    fun edit()
+}
+
+interface PrintDocument {
+    fun print()
+}
+
+class TextDocument : OpenDocument,EditDocument,PrintDocument {
+    override fun open() {
+        println("Opening text document")
+    }
+    override fun edit() {
+        println("Editing text document")
+    }
+    override fun print() {
+        println("Printing text document")
+    }
+}
+
+class ReadOnlyDocument : OpenDocument, PrintDocument{
+    override fun open() {
+        println("Opening read-only document")
+    }
+    override fun print() {
+        println("Printing read-only document")
+    }
+}
+
 //
 
 class ReportGenerator {
