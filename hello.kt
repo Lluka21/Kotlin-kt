@@ -6,7 +6,7 @@ fun main() {
 
 }
 
-// DIP pp solution
+// DIP p solution
 interface MessageService {
     fun send(message: String)
 }
