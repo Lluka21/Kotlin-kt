@@ -6,7 +6,7 @@ fun main() {
 
 }
 
-// DIP  solo
+// DIP  sol
 interface MessageService {
     fun send(message: String)
 }
