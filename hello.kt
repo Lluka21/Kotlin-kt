@@ -34,7 +34,7 @@ class NotificationManager(
 
 
 
-// Interface Segregaton Principle Solution
+// Interface Segregaton Principle Soltion
 interface Workable {
     fun work()
 
