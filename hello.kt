@@ -256,3 +256,6 @@ class ReportEmailSender {
 //    println(y)
     println(10 / 3) // 3
 
+    // listOf(1, 2, 3).map { it * 2 }
+    // Result [2,4,6]
+
