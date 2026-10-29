@@ -248,14 +248,22 @@ class ReportEmailSender {
 
 // 
 
-// Kotlin Questions 
-//    val x = 5
-//    var y = 2
-//    y = x  // y = 5
-//    y++   // 6
-//    println(y)
-    println(10 / 3) // 3
+// Kotlin WarmUp 
 
-    // listOf(1, 2, 3).map { it * 2 }
+   val x = 5
+   var y = 2
+   y = x  // y = 5
+   y++   // 6
+   println(y)
+   println(10 / 3) // 3
+
+    listOf(1, 2, 3).map { it * 2 }
     // Result [2,4,6]
 
+   val name: String? = null
+   println(name ?: "Guest")  
+    
+    
+
+
+//
