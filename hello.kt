@@ -246,4 +246,13 @@ class ReportEmailSender {
     }
 }
 
-//
+// 
+
+// Kotlin Questions 
+//    val x = 5
+//    var y = 2
+//    y = x  // y = 5
+//    y++   // 6
+//    println(y)
+    println(10 / 3) // 3
+
