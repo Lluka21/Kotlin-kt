@@ -266,5 +266,22 @@ class ReportEmailSender {
     fun multiply(a: Int, b: Int = 3) = a * b
     /// This one returns 5 here  ///
 
+// Some Jetpack
+
+@Composable
+
+fun Screen() {
+
+var text by remember { mutableStateOf("A") }
+
+LaunchedEffect(Unit) {
+
+text = "B"
+
+}
+
+Text(text)
+
+}
 
 //
