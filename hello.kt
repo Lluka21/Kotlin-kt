@@ -284,4 +284,17 @@ Text(text)
 
 }
 
+
+@Composable
+fun Screen() {
+val items = listOf("A", "B", "C")
+Column {
+items.forEach {
+Text(it)
+   }
+ }
+}
+
+
+
 //
