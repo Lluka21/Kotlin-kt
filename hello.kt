@@ -295,6 +295,17 @@ Text(it)
  }
 }
 
+Scaffold(
+
+topBar = { TopAppBar(title = { Text("Home") }) },
+
+floatingActionButton = { FloatingActionButton(onClick = {}) { Text("+") } }
+
+) { innerPadding ->
+
+Text("Content", modifier = Modifier.padding(innerPadding))
+
+}
 
 
 //
