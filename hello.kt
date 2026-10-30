@@ -308,4 +308,18 @@ Text("Content", modifier = Modifier.padding(innerPadding))
 }
 
 
+@Composable
+
+fun Counter() {
+
+var count by remember { mutableIntStateOf(0) }
+
+Button(onClick = { count += 2 }) {
+
+Text("$count")
+
+}
+
+}
+
 //
