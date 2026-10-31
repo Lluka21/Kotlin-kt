@@ -135,7 +135,7 @@ class PaymentProcessor {
 }
 //
 
-// Single Responsibility Prinicple
+// Single Responsibility Principle
 
 class OrderCreation {
     fun createOrder(product: String) {
