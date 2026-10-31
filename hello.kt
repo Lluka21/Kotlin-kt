@@ -67,7 +67,7 @@ class RobotWorker : Workable {
 //
 
 
-// Single Responsibility Principe
+// Single Responsibility Principle
 class UserCreation {
     fun createUser(name: String) {
         println("Creating user: $name")
