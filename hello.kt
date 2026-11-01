@@ -101,7 +101,7 @@ class UserManager(
 // 
 
 
-// Open/Close Responsibility Principe
+// Open/Close Responsibility Principle
 
 interface PaymentMethod {
     fun pay(amount: Double)
