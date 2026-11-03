@@ -19,8 +19,17 @@ fun main() {
     println(result)
 
  println("Hello".addExclamation())
+ println(10.isEven())
 }
 
+
+fun Int.isEven(): Boolean {
+    if(this % 2 == 0) {
+        return true
+    } else {
+        return false
+    }
+}
 
 fun String.addExclamation(): String {
     return this + "!"
