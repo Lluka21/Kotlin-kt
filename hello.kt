@@ -17,9 +17,14 @@ fun main() {
 
   val result = calculate(10,5) {x,y -> x+ y}
     println(result)
-    
+
+ println("Hello".addExclamation())
 }
 
+
+fun String.addExclamation(): String {
+    return this + "!"
+}
 
 fun calculate(
     a: Int,
