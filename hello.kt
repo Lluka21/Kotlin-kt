@@ -13,6 +13,10 @@ fun main() {
     
     printlength("Luka")
 
+    val names: List<String?> = listOf("A", null)
+    val result = names.filterNotNull()
+    println(result)
+
  //    
 
   val result = calculate(10,5) {x,y -> x+ y}
