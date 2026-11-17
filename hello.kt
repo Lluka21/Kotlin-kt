@@ -4,7 +4,7 @@ import kotlin.math.absoluteValue
 
 fun main() {
 
-// Smart Casti
+// Smart Cast
        fun printlength(value: String?) {
         if(value != null) {
             println(value.length)
